@@ -1,4 +1,4 @@
-class Node:
+class BinaryTreeNode:
     def __init__(self, data):
         self.data = data
         self.left = None
@@ -7,17 +7,19 @@ class Node:
     def __repr__(self) -> str:
         return str(self.data)
     
-    def search(self, target):
-        if self.data == target:
-            return f"Node item found: {self.data}"
-        
-        if self.left and  self.data > target:
-            return self.left.search(target)
-        
-        if self.right and self.data < target:
-            return self.right.search(target)
-        
-        return "No Node found matching your target"
+    # searching an item in a tree
+    
+    # in-order tree traversal
+    # pre-order tree traversal
+    # post-order tree traversal
+
+    # maximum height of the tree
+    # minimum height of the tree
+
+    # maximum depth of the tree
+    # minimum depth of the tree
+
+    # level-order tree traversal
 
 
     

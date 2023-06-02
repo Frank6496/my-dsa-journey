@@ -11,9 +11,7 @@ class Queue:
 
     def dequeue(self):
         """Removes the 1st(front) item in our queue [FIFO :- Principle]"""
-        if self.q:
-            self.q.pop()
-        return None
+        return self.q.pop() if self.q else None
     
     def size(self):
         """Returns the size or the count of item in our queue"""

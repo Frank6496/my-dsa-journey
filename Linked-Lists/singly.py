@@ -111,7 +111,7 @@ class SLL:
 
     # reversing our linked lists
     def reverse(self, head):
-        prev, curr = None, self.head
+        prev, curr = None, head
 
         while curr:
             node = curr.next

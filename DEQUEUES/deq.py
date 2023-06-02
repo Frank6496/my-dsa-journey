@@ -9,19 +9,19 @@ class DEQUEUE:
         self.items.insert(0, item)
 
     def peek_front(self):
-        return self.items[0]
+        return self.items[0] if self.items else []
 
     def remove_front(self):
-        self.items.pop(0)
+        return self.items.pop(0) if self.items else []
 
     def add_rear(self, item):
         self.items.append(item)
 
     def peek_rear(self):
-        return self.items[-1]
+        return self.items[-1] if self.items else []
 
     def remove_rear(self):
-        self.items.pop()
+        return self.items.pop() if self.items else []
     
     def is_empty(self):
         return self.items == []
